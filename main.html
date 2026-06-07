@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Ello's Portfolio - Developer</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="particles-container" id="particles-bg"></div>
+
+    <nav class="navbar">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-book"></i> Portfolio</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content-wrapper">
+                <div class="hero-text-side">
+                    <h1>John Ivan <span>Ello</span></h1>
+                    <p class="shimmer-text job-title">Game Developer &bull; Full-Stack Web Developer &bull; IoT Product Developer &bull; Quality Assurance</p>
+                    <a href="#projects" class="btn">Explore My Work</a>
+                </div>
+
+                <div class="profile-wrap">
+                    <div class="chrome-spinner"></div>
+                    <img src="../img/ivan.jpg" alt="John Ivan Ello" class="hero-avatar">
+                    <div class="status-dot"></div>
+                </div>
+            </div>
+
+            <div class="scroll-arrow-container">
+                <img src="../img/arrow-down.png" alt="Scroll Down" class="scroll-arrow">
+            </div>
+        </section>
+
+        <section id="about" class="scroll-reveal reveal-left">
+            <div class="skills-compact-container">
+                <div class="skills-header-row">
+                    <h2 class="section-title-left">Skills</h2>
+                    <div class="skills-filter">
+                        <button class="filter-btn active" data-role="all">All</button>
+                        <button class="filter-btn chrome-red" data-role="game">Game Dev</button>
+                        <button class="filter-btn chrome-blue" data-role="web">Web Dev</button>
+                        <button class="filter-btn chrome-yellow" data-role="iot">IoT</button>
+                        <button class="filter-btn chrome-green" data-role="qa">QA</button>
+                    </div>
+                </div>
+                
+                <hr class="skills-divider">
+
+                <div class="about-content">
+                    <div class="skill-tags" id="skill-container">
+                        <span data-category="game web iot qa"><i class="devicon-figma-plain"></i> Figma</span>
+                        <span data-category="game web"><i class="devicon-photoshop-plain"></i> Photoshop</span>
+                        <span data-category="game web"><i class="devicon-illustrator-plain"></i> Illustrator</span>
+                        <span data-category="game"><i class="devicon-unity-original"></i> Unity3D</span>
+                        <span data-category="game"><i class="devicon-csharp-plain"></i> C#</span>
+                        <span data-category="game iot"><i class="devicon-cplusplus-plain"></i> C++</span>
+                        <span data-category="game"><i class="devicon-blender-original"></i> Blender</span>
+                        <span data-category="game web iot qa"><i class="devicon-git-plain"></i> Git</span>
+                        <span data-category="web qa"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                        <span data-category="game web iot qa"><i class="devicon-python-plain"></i> Python</span>
+                        <span data-category="iot"><i class="devicon-java-plain"></i> Java</span>
+                        <span data-category="iot"><i class="devicon-c-plain"></i> C</span>
+                        <span data-category="web"><i class="devicon-html5-plain"></i> HTML5</span>
+                        <span data-category="web"><i class="devicon-css3-plain"></i> CSS</span>
+                        <span data-category="web"><i class="devicon-tailwindcss-original"></i> TailwindCSS</span>
+                        <span data-category="web"><i class="devicon-react-original"></i> React</span>
+                        <span data-category="web"><i class="devicon-nextjs-plain"></i> Next.js</span>
+                        <span data-category="web"><i class="devicon-vite-plain"></i> Vite</span>
+                        <span data-category="web"><i class="devicon-php-plain"></i> PHP</span>
+                        <span data-category="web"><i class="devicon-typescript-plain"></i> TypeScript</span>
+                        <span data-category="web iot qa"><i class="devicon-mysql-original"></i> MySQL</span>
+                        <span data-category="web iot qa"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+                        <span data-category="web"><i class="devicon-prisma-original"></i> Prisma</span>
+                        <span data-category="web iot qa"><i class="devicon-linux-plain"></i> Linux</span>
+                        <span data-category="web iot qa"><i class="devicon-bash-plain"></i> Bash</span>
+                        <span data-category="web"><i class="devicon-npm-original-wordmark"></i> npm</span>
+                        <span data-category="web iot qa"><i class="devicon-postman-plain"></i> Postman</span>
+                        <span data-category="iot"><i class="devicon-googlecloud-plain"></i> GCP</span>
+                        <span data-category="qa"><i class="devicon-jira-plain"></i> Jira</span>
+                        <span data-category="qa"><i class="devicon-trello-plain"></i> Trello</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="chrome-window window-red" onclick="openProjectModal('game', this)">
+                    <div class="chrome-header">
+                        <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    </div>
+                    <div class="window-content">
+                        <div class="circle-frame"><img src="../img/gamedevbg.png" alt="Game Dev"></div>
+                        <h3>Game Development</h3>
+                    </div>
+                </div>
+                <div class="chrome-window window-blue" onclick="openProjectModal('web', this)">
+                    <div class="chrome-header">
+                        <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    </div>
+                    <div class="window-content">
+                        <div class="circle-frame"><img src="../img/webdevbg.png" alt="Web Dev"></div>
+                        <h3>Web Development</h3>
+                    </div>
+                </div>
+                <div class="chrome-window window-yellow" onclick="openProjectModal('iot', this)">
+                    <div class="chrome-header">
+                        <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    </div>
+                    <div class="window-content">
+                        <div class="circle-frame"><img src="../img/iotbg.png" alt="IoT"></div>
+                        <h3>Internet of Things</h3>
+                    </div>
+                </div>
+                <div class="chrome-window window-green" onclick="openProjectModal('qa', this)">
+                    <div class="chrome-header">
+                        <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    </div>
+                    <div class="window-content">
+                        <div class="circle-frame"><img src="../img/qabg.png" alt="QA"></div>
+                        <h3>Quality Assurance</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="project-modal" class="modal-overlay" onclick="handleOverlayClick(event)">
+            <div class="modal-window" id="modal-content" onclick="event.stopPropagation()">
+                <div class="chrome-header">
+                    <span id="modal-header-text" class="header-label">PROJECTS</span>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot close-btn" onclick="closeProjectModal()" title="Close Window"></span>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="project-internal-grid" id="modal-projects-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <section id="contact" class="scroll-reveal reveal-right">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-email"><a href="mailto:hello@ivanello.dev">hello@ivanello.dev</a></div>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 John Ivan Ello. All rights reserved.</p>
+    </footer>
+
+    <script>
+        (function() {
+            const particleContainer = document.getElementById('particles-bg');
+            const particleCount = window.innerWidth < 768 ? 30 : 60;
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('i');
+                const posX = Math.random() * 100;
+                const delay = Math.random() * -15; 
+                const duration = 12 + Math.random() * 10;
+                const size = 3 + Math.random() * 6;
+                particle.style.left = posX + '%';
+                particle.style.animationDelay = delay + 's';
+                particle.style.animationDuration = duration + 's';
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particleContainer.appendChild(particle);
+            }
+        })();
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('active'); }
+                else { entry.target.classList.remove('active'); }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const skillContainer = document.getElementById('skill-container');
+        const skillTags = document.querySelectorAll('.skill-tags span');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const role = btn.getAttribute('data-role');
+                skillContainer.className = 'skill-tags'; 
+                if (role !== 'all') {
+                    skillContainer.classList.add('filtering', `active-${role}`);
+                    skillTags.forEach(t => {
+                        const cats = t.getAttribute('data-category').split(' ');
+                        t.classList.toggle('highlight', cats.includes(role));
+                    });
+                } else {
+                    skillTags.forEach(t => t.classList.remove('highlight'));
+                }
+            });
+        });
+
+        const projectData = {
+            game: [{ title: "Horror Project", desc: "Unity 3D project.", tags: ["Unity", "C#"], img: "../img/gamedevbg.png" }, { title: "Platformer", desc: "Fast mechanics.", tags: ["Blender", "C#"], img: "../img/gamedevbg.png" }],
+            web: [{ title: "Portfolio CMS", desc: "Custom headless CMS.", tags: ["Next.js", "Express"], img: "../img/webdevbg.png" }],
+            iot: [{ title: "AquaNova", desc: "Autonomous solar-powered floating robot designed to collect waste from water.", tags: ["C++", "IoT"], img: "../img/iotbg.png" }],
+            qa: [{ title: "QA Suite", desc: "Automation testing.", tags: ["Postman", "Jira"], img: "../img/qabg.png" }]
+        };
+
+        function openProjectModal(category, element) {
+            const modal = document.getElementById('project-modal');
+            const container = document.getElementById('modal-projects-container');
+            const modalWindow = document.getElementById('modal-content');
+            const headerText = document.getElementById('modal-header-text');
+            modalWindow.className = 'modal-window';
+            if(element.classList.contains('window-red')) modalWindow.classList.add('window-red');
+            if(element.classList.contains('window-blue')) modalWindow.classList.add('window-blue');
+            if(element.classList.contains('window-yellow')) modalWindow.classList.add('window-yellow');
+            if(element.classList.contains('window-green')) modalWindow.classList.add('window-green');
+            headerText.innerText = category.toUpperCase() + " PROJECTS";
+            container.innerHTML = '';
+            projectData[category].forEach(proj => {
+                container.innerHTML += `<div class="internal-card"><img src="${proj.img}"><div class="internal-card-info"><h3>${proj.title}</h3><div class="internal-tags">${proj.tags.map(t => `<span>${t}</span>`).join('')}</div><p>${proj.desc}</p><button class="view-proj-btn">View Project →</button></div></div>`;
+            });
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectModal() {
+            document.getElementById('project-modal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function handleOverlayClick(event) { closeProjectModal(); }
+        window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeProjectModal(); });
+    </script>
+</body>
+</html>
