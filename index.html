@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivan Ello's Portfolio - Developer</title>
-    
+    <title>John Ivan P. Ello | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
@@ -13,14 +12,31 @@
 
     <div class="particles-container" id="particles-bg"></div>
 
-    <nav class="navbar">
+    <nav class="banner-nav">
+        <div class="banner-nav-links">
+            <a href="#home">Home</a>
+            <a href="#about-me">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="top-banner">
+        <div class="banner-image-container">
+            <img src="../img/banner-art.jpg" alt="Banner Art" class="banner-img">
+        </div>
+    </header>
+
+    <nav class="navbar hidden-nav" id="floating-nav">
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
         </label>
         <ul class="nav-links">
             <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#about-me"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
             <li><a href="#projects"><i class="fa-solid fa-book"></i> Portfolio</a></li>
             <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
         </ul>
@@ -30,22 +46,95 @@
         <section id="home" class="hero">
             <div class="hero-content-wrapper">
                 <div class="hero-text-side">
-                    <h1>John Ivan <span>Ello</span></h1>
-                    <p class="shimmer-text job-title">Game Developer &bull; Full-Stack Web Developer &bull; IoT Product Developer &bull; Quality Assurance</p>
-                    <a href="#projects" class="btn">Explore My Work</a>
+                    <div class="animate-load-1">
+                        <h1 class="bithell-logo cyber-glitch" data-text="JOHN IVAN P. ELLO">JOHN IVAN P. <span>ELLO</span></h1>
+                    </div>
+                    <div class="animate-load-2">
+                        <p class="shimmer-text job-title">NETWORK ENGINEER &bull; GAME DEVELOPER</p>
+                    </div>
+                    <div class="hero-btns animate-load-3">
+                        <a href="#projects" class="btn">Explore My Work</a>
+                    </div>
                 </div>
 
-                <div class="profile-wrap">
-                    <div class="chrome-spinner"></div>
-                    <img src="../img/ivan.jpg" alt="John Ivan Ello" class="hero-avatar">
-                    <div class="status-dot"></div>
+                <div class="animate-load-3">
+                    <div class="profile-wrap">
+                        <div class="chrome-spinner"></div>
+                        <img src="../img/ivan.jpg" alt="John Ivan P. Ello" class="hero-avatar">
+                        <div class="status-dot pulse"></div>
+                    </div>
                 </div>
             </div>
 
-            <div class="scroll-arrow-container">
+            <div class="scroll-arrow-container animate-load-4">
                 <img src="../img/arrow-down.png" alt="Scroll Down" class="scroll-arrow">
             </div>
         </section>
+
+        <hr class="cyber-line scroll-reveal reveal-zoom">
+
+        <section id="about-me" class="scroll-reveal reveal-left">
+            <div class="bio-container">
+                <div class="bio-wrapper">
+                    <div class="bio-slideshow-frame">
+                        <div class="bio-slideshow">
+                            <img src="../img/SS1.png" class="bio-slide">
+                            <img src="../img/SS2.png" class="bio-slide">
+                            <img src="../img/SS3.png" class="bio-slide">
+                            <img src="../img/SS4.png" class="bio-slide">
+                            <img src="../img/SS5.png" class="bio-slide">
+                        </div>
+                        <div class="bio-scanline"></div>
+                    </div>
+
+                    <div class="bio-text-content">
+                        <span class="bio-status-code">SYSTEM_STATUS: ACTIVE</span>
+                        <h2 class="bio-main-title">About Me</h2>
+                        <p>
+                            I am a <span class="highlight-cyan">Network Engineer</span> and <span class="highlight-cyan">Game Developer</span> dedicated to bridging the gap between high-performance infrastructure and interactive systems. 
+                        </p>
+                        <p>
+                            I specialize in designing high-availability enterprise networks, optimizing core routing protocols, and securing data pathways. Beyond infrastructure, I leverage my technical background to build and streamline efficient 3D asset pipelines. I thrive at the intersection of logical systems and technical execution, ensuring complex architectures are scalable, secure, and fully optimized.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="scroll-reveal reveal-right">
+            <h2 class="section-title">Education</h2>
+            <div class="education-compact-grid">
+                
+                <div class="edu-card plm-neon">
+                    <div class="edu-header">
+                        <span class="edu-date">Sept 2022 – June 2026</span>
+                        <div class="summa-badge">Summa Cum Laude</div>
+                    </div>
+                    <h3>Pamantasan ng Lungsod ng Maynila</h3>
+                    <p class="edu-degree">BS in Information Technology</p>
+                    <ul class="edu-list">
+                        <li><i class="fa-solid fa-trophy"></i> <span>College Academic Excellence Award</span></li>
+                        <li><i class="fa-solid fa-medal"></i> <span>Consistent Rank 1 | GWA: 1.22</span></li>
+                        <li><i class="fa-solid fa-star"></i> <span>President’s Lister</span></li>
+                    </ul>
+                </div>
+
+                <div class="edu-card pup-neon">
+                    <div class="edu-header">
+                        <span class="edu-date">Sep 2020 – Jul 2022</span>
+                        <div class="honors-badge">With High Honors</div>
+                    </div>
+                    <h3>Polytechnic University of the Philippines</h3>
+                    <p class="edu-degree">Science, Technology, Engineering, and Mathematics</p>
+                    <ul class="edu-list">
+                        <li><i class="fa-solid fa-award"></i> <span>GWA: 96.68</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="cyber-line scroll-reveal reveal-zoom">
 
         <section id="about" class="scroll-reveal reveal-left">
             <div class="skills-compact-container">
@@ -53,45 +142,58 @@
                     <h2 class="section-title-left">Skills</h2>
                     <div class="skills-filter">
                         <button class="filter-btn active" data-role="all">All</button>
-                        <button class="filter-btn chrome-red" data-role="game">Game Dev</button>
-                        <button class="filter-btn chrome-blue" data-role="web">Web Dev</button>
-                        <button class="filter-btn chrome-yellow" data-role="iot">IoT</button>
+                        <button class="filter-btn chrome-red" data-role="networking">Networking</button>
+                        <button class="filter-btn chrome-blue" data-role="game">Game Dev</button>
+                        <button class="filter-btn chrome-yellow" data-role="web_iot">Web & IoT Dev</button>
                         <button class="filter-btn chrome-green" data-role="qa">QA</button>
                     </div>
                 </div>
-                
                 <hr class="skills-divider">
-
                 <div class="about-content">
                     <div class="skill-tags" id="skill-container">
-                        <span data-category="game web iot qa"><i class="devicon-figma-plain"></i> Figma</span>
-                        <span data-category="game web"><i class="devicon-photoshop-plain"></i> Photoshop</span>
-                        <span data-category="game web"><i class="devicon-illustrator-plain"></i> Illustrator</span>
+                        <!-- Networking Specific Skills -->
+                        <span data-category="networking"><i class="fa-solid fa-network-wired"></i> Cisco R&S</span>
+                        <span data-category="networking"><i class="fa-solid fa-route"></i> OSPF / EIGRP</span>
+                        <span data-category="networking"><i class="fa-solid fa-globe"></i> BGP</span>
+                        <span data-category="networking"><i class="fa-solid fa-layer-group"></i> VLAN / STP / VTP</span>
+                        <span data-category="networking"><i class="fa-solid fa-exchange-alt"></i> NAT / DHCP / DNS</span>
+                        <span data-category="networking"><i class="fa-solid fa-shield-halved"></i> IPsec / VPN / Firewalls</span>
+                        <span data-category="networking"><i class="fa-solid fa-wifi"></i> Wireless LAN</span>
+                        <span data-category="networking"><i class="fa-solid fa-microchip"></i> GNS3 / Packet Tracer</span>
+                        <span data-category="networking"><i class="fa-solid fa-magnifying-glass-chart"></i> Wireshark / TCPdump</span>
+                        <span data-category="networking dev"><i class="devicon-ansible-plain"></i> Ansible / Automation</span>
+                        <span data-category="networking dev"><i class="devicon-docker-plain"></i> Docker</span>
+                        <span data-category="networking web_iot"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+                        <span data-category="networking web_iot"><i class="devicon-googlecloud-plain"></i> GCP</span>
+                        
+                        <!-- Shared & Other Skills -->
+                        <span data-category="game web_iot qa"><i class="devicon-figma-plain"></i> Figma</span>
+                        <span data-category="game web_iot"><i class="devicon-photoshop-plain"></i> Photoshop</span>
+                        <span data-category="game web_iot"><i class="devicon-illustrator-plain"></i> Illustrator</span>
                         <span data-category="game"><i class="devicon-unity-original"></i> Unity3D</span>
                         <span data-category="game"><i class="devicon-csharp-plain"></i> C#</span>
-                        <span data-category="game iot"><i class="devicon-cplusplus-plain"></i> C++</span>
+                        <span data-category="game web_iot"><i class="devicon-cplusplus-plain"></i> C++</span>
                         <span data-category="game"><i class="devicon-blender-original"></i> Blender</span>
-                        <span data-category="game web iot qa"><i class="devicon-git-plain"></i> Git</span>
-                        <span data-category="web qa"><i class="devicon-javascript-plain"></i> JavaScript</span>
-                        <span data-category="game web iot qa"><i class="devicon-python-plain"></i> Python</span>
-                        <span data-category="iot"><i class="devicon-java-plain"></i> Java</span>
-                        <span data-category="iot"><i class="devicon-c-plain"></i> C</span>
-                        <span data-category="web"><i class="devicon-html5-plain"></i> HTML5</span>
-                        <span data-category="web"><i class="devicon-css3-plain"></i> CSS</span>
-                        <span data-category="web"><i class="devicon-tailwindcss-original"></i> TailwindCSS</span>
-                        <span data-category="web"><i class="devicon-react-original"></i> React</span>
-                        <span data-category="web"><i class="devicon-nextjs-plain"></i> Next.js</span>
-                        <span data-category="web"><i class="devicon-vite-plain"></i> Vite</span>
-                        <span data-category="web"><i class="devicon-php-plain"></i> PHP</span>
-                        <span data-category="web"><i class="devicon-typescript-plain"></i> TypeScript</span>
-                        <span data-category="web iot qa"><i class="devicon-mysql-original"></i> MySQL</span>
-                        <span data-category="web iot qa"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
-                        <span data-category="web"><i class="devicon-prisma-original"></i> Prisma</span>
-                        <span data-category="web iot qa"><i class="devicon-linux-plain"></i> Linux</span>
-                        <span data-category="web iot qa"><i class="devicon-bash-plain"></i> Bash</span>
-                        <span data-category="web"><i class="devicon-npm-original-wordmark"></i> npm</span>
-                        <span data-category="web iot qa"><i class="devicon-postman-plain"></i> Postman</span>
-                        <span data-category="iot"><i class="devicon-googlecloud-plain"></i> GCP</span>
+                        <span data-category="game web_iot networking qa"><i class="devicon-git-plain"></i> Git</span>
+                        <span data-category="web_iot qa"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                        <span data-category="game web_iot networking qa"><i class="devicon-python-plain"></i> Python</span>
+                        <span data-category="web_iot networking"><i class="devicon-java-plain"></i> Java</span>
+                        <span data-category="web_iot"><i class="devicon-c-plain"></i> C</span>
+                        <span data-category="web_iot"><i class="devicon-html5-plain"></i> HTML5</span>
+                        <span data-category="web_iot"><i class="devicon-css3-plain"></i> CSS</span>
+                        <span data-category="web_iot"><i class="devicon-tailwindcss-original"></i> TailwindCSS</span>
+                        <span data-category="web_iot"><i class="devicon-react-original"></i> React</span>
+                        <span data-category="web_iot"><i class="devicon-nextjs-plain"></i> Next.js</span>
+                        <span data-category="web_iot"><i class="devicon-vite-plain"></i> Vite</span>
+                        <span data-category="web_iot"><i class="devicon-php-plain"></i> PHP</span>
+                        <span data-category="web_iot"><i class="devicon-typescript-plain"></i> TypeScript</span>
+                        <span data-category="web_iot qa"><i class="devicon-mysql-original"></i> MySQL</span>
+                        <span data-category="web_iot qa"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+                        <span data-category="web_iot"><i class="devicon-prisma-original"></i> Prisma</span>
+                        <span data-category="web_iot networking qa"><i class="devicon-linux-plain"></i> Linux</span>
+                        <span data-category="web_iot networking qa"><i class="devicon-bash-plain"></i> Bash</span>
+                        <span data-category="web_iot"><i class="devicon-npm-original-wordmark"></i> npm</span>
+                        <span data-category="web_iot qa"><i class="devicon-postman-plain"></i> Postman</span>
                         <span data-category="qa"><i class="devicon-jira-plain"></i> Jira</span>
                         <span data-category="qa"><i class="devicon-trello-plain"></i> Trello</span>
                     </div>
@@ -100,9 +202,20 @@
         </section>
 
         <section id="projects">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title scroll-reveal reveal-zoom">Projects</h2>
             <div class="projects-grid">
-                <div class="chrome-window window-red" onclick="openProjectModal('game', this)">
+                
+                <div class="chrome-window window-red scroll-reveal reveal-zoom" onclick="openProjectModal('networking', this)">
+                    <div class="chrome-header">
+                        <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                    </div>
+                    <div class="window-content">
+                        <div class="circle-frame"><img src="../img/networkbg.png" alt="Networking"></div>
+                        <h3>Network Engineer</h3>
+                    </div>
+                </div>
+                
+                <div class="chrome-window window-blue scroll-reveal reveal-zoom" onclick="openProjectModal('game', this)">
                     <div class="chrome-header">
                         <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
                     </div>
@@ -111,25 +224,18 @@
                         <h3>Game Development</h3>
                     </div>
                 </div>
-                <div class="chrome-window window-blue" onclick="openProjectModal('web', this)">
+                
+                <div class="chrome-window window-yellow scroll-reveal reveal-zoom" onclick="openProjectModal('web_iot', this)">
                     <div class="chrome-header">
                         <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
                     </div>
                     <div class="window-content">
-                        <div class="circle-frame"><img src="../img/webdevbg.png" alt="Web Dev"></div>
-                        <h3>Web Development</h3>
+                        <div class="circle-frame"><img src="../img/webdevbg.png" alt="Web and IOT Development"></div>
+                        <h3>Web and IOT Development</h3>
                     </div>
                 </div>
-                <div class="chrome-window window-yellow" onclick="openProjectModal('iot', this)">
-                    <div class="chrome-header">
-                        <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-                    </div>
-                    <div class="window-content">
-                        <div class="circle-frame"><img src="../img/iotbg.png" alt="IoT"></div>
-                        <h3>Internet of Things</h3>
-                    </div>
-                </div>
-                <div class="chrome-window window-green" onclick="openProjectModal('qa', this)">
+                
+                <div class="chrome-window window-green scroll-reveal reveal-zoom" onclick="openProjectModal('qa', this)">
                     <div class="chrome-header">
                         <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
                     </div>
@@ -143,7 +249,7 @@
 
         <div id="project-modal" class="modal-overlay" onclick="handleOverlayClick(event)">
             <div class="modal-window" id="modal-content" onclick="event.stopPropagation()">
-                <div class="chrome-header">
+                <div class="chrome-header modal-header-fix">
                     <span id="modal-header-text" class="header-label">PROJECTS</span>
                     <div class="dots">
                         <span class="dot"></span>
@@ -156,31 +262,155 @@
                 </div>
             </div>
         </div>
+        
+        <section id="contact" class="modern-footer-section">
+            <div class="footer-top-connect scroll-reveal reveal-zoom">
+                <h2 class="ready-connect-title">Ready to <span class="pill-badge fade-text typing-text">connect?</span></h2>
+                <div class="contact-links">
+                    <a href="mailto:1ello.johnivan03@gmail.com" target="_blank" class="contact-pill primary-pill">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </a>
 
-        <section id="contact" class="scroll-reveal reveal-right">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-email"><a href="mailto:hello@ivanello.dev">hello@ivanello.dev</a></div>
-            <div class="social-links">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/johnivanello/" target="_blank" class="contact-pill">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+
+                    <a href="https://github.com/JohnIvan-Ello" target="_blank" class="contact-pill">
+                        <i class="fa-brands fa-github"></i> Github
+                    </a>
+                </div>
+            </div>
+
+            <div class="large-scroller-container">
+                <div class="large-scroller scroll-left">
+                    <span>NETWORK ENGINEER &bull; GAME DEVELOPER &bull; NETWORK ENGINEER &bull; GAME DEVELOPER &bull; NETWORK ENGINEER &bull; GAME DEVELOPER &bull; </span>
+                    <span>NETWORK ENGINEER &bull; GAME DEVELOPER &bull; NETWORK ENGINEER &bull; GAME DEVELOPER &bull; NETWORK ENGINEER &bull; GAME DEVELOPER &bull; </span>
+                </div>
+                <div class="large-scroller scroll-right">
+                    <span>GAME DEVELOPER &bull; NETWORK ENGINEER &bull; GAME DEVELOPER &bull; NETWORK ENGINEER &bull; GAME DEVELOPER &bull; NETWORK ENGINEER &bull; </span>
+                    <span>GAME DEVELOPER &bull; NETWORK ENGINEER &bull; GAME DEVELOPER &bull; NETWORK ENGINEER &bull; GAME DEVELOPER &bull; NETWORK ENGINEER &bull; </span>
+                </div>
+            </div>
+
+            <div class="white-footer-wrapper">
+                <footer class="modern-footer-bottom scroll-reveal reveal-zoom">
+                    <div class="footer-thanks">
+                        <h2>Thank you for <strong>visiting!</strong></h2>
+                    </div>
+                    <div class="footer-bottom-bar">
+                        <button class="scroll-top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </button>
+                        <p class="copyright">© 2026 John Ivan P. Ello</p>
+                        <div class="footer-nav-links">
+                            <a href="#about-me">About</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#contact">Connect</a>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </section>
+
+        <div class="versa-wrapper">
+            <div class="versa-window" id="versaWindow">
+                
+                <div class="versa-header">
+                    <div class="versa-header-content">
+                        <div class="versa-icon-container">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="versa-title-container">
+                            <div class="versa-name">VERSA</div>
+                            <div class="versa-subtitle">Virtual Executive Responsive System Assistant</div>
+                        </div>
+                    </div>
+                    <button class="versa-close" onclick="toggleVersa()"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                
+                <div class="versa-chat-area" id="versaBody">
+                    <div class="versa-msg bot-msg">
+                        Hi! I'm VERSA, John Ivan's Virtual Executive Responsive System Assistant. How can I help you today?
+                    </div>
+                </div>
+
+                <div class="versa-options-container" id="versaOptionsContainer">
+                    <div class="versa-options" id="versaOptions">
+                        </div>
+                </div>
+
+                <div class="versa-input-area">
+                    <input type="text" id="versaInput" class="versa-input" placeholder="Type a message..." onkeypress="handleVersaKeyPress(event)">
+                    <button class="versa-send-btn" onclick="handleVersaCustomInput()">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                </div>
+                
+            </div>
+            
+            <button class="versa-toggle pulse" onclick="toggleVersa()">
+                <i class="fa-solid fa-robot"></i>
+            </button>
+        </div>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 John Ivan Ello. All rights reserved.</p>
-    </footer>
-
     <script>
+        // --- NAVIGATION LOGIC ---
+        window.addEventListener('scroll', () => {
+            const floatingNav = document.getElementById('floating-nav');
+            const isMobile = window.innerWidth <= 900;
+            const triggerHeight = isMobile ? -1 : 550;
+
+            if (window.scrollY > triggerHeight) {
+                floatingNav.classList.remove('hidden-nav');
+            } else {
+                floatingNav.classList.add('hidden-nav');
+            }
+        });
+        
+        window.addEventListener('resize', () => {
+            window.dispatchEvent(new Event('scroll'));
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav-toggle').checked = false;
+            });
+        });
+
+        // Dynamic Fade Typing Text Logic
+        const words = ["connect?", "innovate?", "build?", "design?", "create?"];
+        let wordIndex = 0;
+        const typingSpan = document.querySelector('.typing-text');
+
+        function updateTypingText() {
+            if(!typingSpan) return;
+            typingSpan.classList.add('fade-out');
+            setTimeout(() => {
+                typingSpan.textContent = words[wordIndex];
+                wordIndex = (wordIndex + 1) % words.length;
+                typingSpan.classList.remove('fade-out');
+            }, 500); 
+        }
+        
+        setInterval(updateTypingText, 3000); 
+        typingSpan.textContent = words[0]; 
+        wordIndex++;
+
+        window.dispatchEvent(new Event('scroll'));
+
+        // Particle Logic
         (function() {
             const particleContainer = document.getElementById('particles-bg');
-            const particleCount = window.innerWidth < 768 ? 30 : 60;
+            if(!particleContainer) return;
+            const particleCount = window.innerWidth < 768 ? 60 : 120; 
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('i');
                 const posX = Math.random() * 100;
-                const delay = Math.random() * -15; 
-                const duration = 12 + Math.random() * 10;
-                const size = 3 + Math.random() * 6;
+                const delay = Math.random() * -20; 
+                const duration = 10 + Math.random() * 15;
+                const size = 2 + Math.random() * 4;
                 particle.style.left = posX + '%';
                 particle.style.animationDelay = delay + 's';
                 particle.style.animationDuration = duration + 's';
@@ -190,6 +420,7 @@
             }
         })();
 
+        // Reveal Logic
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) { entry.target.classList.add('active'); }
@@ -198,6 +429,7 @@
         }, { threshold: 0.1 });
         document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
 
+        // Skill Filtering Logic
         const filterBtns = document.querySelectorAll('.filter-btn');
         const skillContainer = document.getElementById('skill-container');
         const skillTags = document.querySelectorAll('.skill-tags span');
@@ -220,11 +452,196 @@
             });
         });
 
+        // Project Data 
         const projectData = {
-            game: [{ title: "Horror Project", desc: "Unity 3D project.", tags: ["Unity", "C#"], img: "../img/gamedevbg.png" }, { title: "Platformer", desc: "Fast mechanics.", tags: ["Blender", "C#"], img: "../img/gamedevbg.png" }],
-            web: [{ title: "Portfolio CMS", desc: "Custom headless CMS.", tags: ["Next.js", "Express"], img: "../img/webdevbg.png" }],
-            iot: [{ title: "AquaNova", desc: "Autonomous solar-powered floating robot designed to collect waste from water.", tags: ["C++", "IoT"], img: "../img/iotbg.png" }],
-            qa: [{ title: "QA Suite", desc: "Automation testing.", tags: ["Postman", "Jira"], img: "../img/qabg.png" }]
+            networking: [
+                { 
+                    title: "The Converged Core: Multi-Protocol Enterprise WAN Architecture", 
+                    desc: "Engineered a complex, multi-domain network simulation focused on advanced routing boundaries and edge security. Successfully achieved end-to-end convergence by bridging a Multi-Area OSPF backbone with a dual-AS EIGRP core, routing out to an eBGP internet edge with automated failover.", 
+                    img: "../img/net1.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "#" }] 
+                },
+                { 
+                    title: "High-Availability Collapsed Core Architecture: OSPF Campus LAN and NAT Edge Integration", 
+                    desc: "Architected a highly resilient campus network utilizing dynamic routing and secure NAT edge integration. This production-ready design eliminates single points of failure to guarantee uninterrupted connectivity during network outages.", 
+                    img: "../img/net2.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "#" }] 
+                },
+                { 
+                    title: "ENES - 𝗜𝗣𝘃𝟰 𝗥𝗼𝘂𝘁𝗶𝗻𝗴 𝗣𝗿𝗼𝘁𝗼𝗰𝗼𝗹𝘀", 
+                    desc: "Deployed and verified both static and dynamic IPv4 routing architectures across a simulated enterprise topology using GNS3.", 
+                    img: "../img/net3.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "#" }] 
+                },
+                { 
+                    title: "ENES - 𝗢𝗦𝗣𝗙 𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁 𝗠𝘂𝗹𝘁𝗶-𝗔𝗰𝗰𝗲𝘀𝘀 (𝗗𝗥 𝗮𝗻𝗱 𝗕𝗗𝗥 𝗘𝗹𝗲𝗰𝘁𝗶𝗼𝗻)", 
+                    desc: "Configured OSPF in a Broadcast Multi-Access environment, actively managing and analyzing the DR and BDR election processes to optimize local traffic flow.", 
+                    img: "../img/net4.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "#" }] 
+                },
+                { 
+                    title: "ENES - 𝗜𝗻𝘁𝗲𝗿-𝗩𝗟𝗔𝗡 𝗥𝗼𝘂𝘁𝗶𝗻𝗴 (𝗥𝗼𝘂𝘁𝗲𝗿-𝗼𝗻-𝗮-𝗦𝘁𝗶𝗰𝗸)", 
+                    desc: "Implemented a Router-on-a-Stick setup to establish communication between isolated VLANs, ensuring logical segmentation within the corporate LAN.", 
+                    img: "../img/net5.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "#" }] 
+                },
+                { 
+                    title: "ENES - 𝗠𝘂𝗹𝘁𝗶𝗹𝗮𝘆𝗲𝗿 𝗦𝘄𝗶𝘁𝗰𝗵𝗶𝗻𝗴 (𝗦𝗩𝗜)", 
+                    desc: "Upgraded inter-VLAN routing by migrating to Layer 3 Switch Virtual Interfaces (SVIs), significantly improving throughput and removing ROAS bottlenecks.", 
+                    img: "../img/net6.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "#" }] 
+                },
+                { 
+                    title: "ENES - 𝗘𝘁𝗵𝗲𝗿𝗖𝗵𝗮𝗻𝗻𝗲𝗹 (𝗟𝗔𝗖𝗣, 𝗣𝗔𝗴𝗣, 𝗦𝘁𝗮𝘁𝗶𝗰)", 
+                    desc: "Boosted bandwidth and created fault-tolerant backbone links by configuring LACP, PAgP, and static link aggregation between core and distribution switches.", 
+                    img: "../img/net7.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "#" }] 
+                },
+                { 
+                    title: "ENES - 𝗗𝗛𝗖𝗣 (𝗜𝗣𝘃𝟰 + 𝗥𝗲𝗹𝗮𝘆 𝗖𝗼𝗻𝗰𝗲𝗽𝘁)", 
+                    desc: "Centralized IP address allocation across the enterprise using a multi-router topology, leveraging IP Helper addresses to serve remote broadcast domains.", 
+                    img: "../img/net8.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "#" }] 
+                },
+                { 
+                    title: "ENES - 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 𝗔𝗱𝗱𝗿𝗲𝘀𝘀 𝗧𝗿𝗮𝗻𝘀𝗹𝗮𝘁𝗶𝗼𝗻 (𝗡𝗔𝗧)", 
+                    desc: "Configured Network Address Translation to securely bridge internal, private enterprise subnets with public internet gateways.", 
+                    img: "../img/net9.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "#" }] 
+                },
+                { 
+                    title: "ENES - 𝗜𝗣𝘃𝟲 𝗥𝗼𝘂𝘁𝗶𝗻𝗴 𝗣𝗿𝗼𝘁𝗼𝗰𝗼𝗹𝘀", 
+                    desc: "Simulated an enterprise transition to Next-Gen IP, configuring dynamic and static IPv6 routing to establish complete, end-to-end global reachability.", 
+                    img: "../img/net10.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "#" }] 
+                },
+                { 
+                    title: "ENES - 𝗜𝗣𝘃𝟰 & 𝗜𝗣𝘃𝟲 𝗙𝗹𝗼𝗮𝘁𝗶𝗻𝗴 𝗦𝘁𝗮𝘁𝗶𝗰 𝗥𝗼𝘂𝘁𝗲𝘀", 
+                    desc: "Engineered automated WAN failover for a dual-stack network, using floating static routes to provide transparent, zero-downtime backup connectivity.", 
+                    img: "../img/net11.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "#" }] 
+                },
+                { 
+                    title: "ENES - 𝗕𝗼𝗿𝗱𝗲𝗿 𝗚𝗮𝘁𝗲𝘄𝗮𝘆 𝗣𝗿𝗼𝘁𝗼𝗰𝗼𝗹 (𝗲𝗕𝗚𝗣 & 𝗶𝗕𝗚𝗣)", 
+                    desc: "Designed a multi-AS network to explore internet-scale routing, successfully configuring and comparing the mechanics of internal (iBGP) and external (eBGP) peerings.", 
+                    img: "../img/net12.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "#" }] 
+                }
+            ],
+            game: [
+                { 
+                    title: "Underground Laboratory", 
+                    desc: "A game environment prototype created for an SCP-inspired project focusing on spatial design, atmospheric lighting, and immersive sci-fi worldbuilding.", 
+                    img: "../img/gamedevbg.png", 
+                    links: [{ label: "View Game", class: "btn-primary", href: "https://www.roblox.com/games/4515596630/Underground-Laboratory" }, { label: "View Previews", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/SCP-Underground-Laboratory" }] 
+                },
+                { 
+                    title: "Project DBSR", 
+                    desc: "Dragon Ball inspired game project featuring environments like the Tournament of Power arena and Zen-Oh’s Mansion, including custom character cosmetics.", 
+                    img: "../img/dbsrmodal.jpg", 
+                    links: [{ label: "View Game", class: "btn-primary", href: "https://www.roblox.com/games/4743701290/Project-DBSR-Earth" }, { label: "View Previews", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Project-DBSR" }] 
+                },
+                { 
+                    title: "rObby", 
+                    desc: "Obstacle course game inspired by popular anime. Features diverse platforming challenges like kill bricks and moving obstacles that test precision.", 
+                    img: "../img/robbymodal.jpg", 
+                    links: [{ label: "View Game", class: "btn-primary", href: "https://www.roblox.com/games/82816469630007/rObby" }, { label: "View Previews", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/rObby" }] 
+                },
+                { 
+                    title: "Shin No Tower", 
+                    desc: "Inspired by Tower of God. Translates the tower’s floors into battleground maps where strategy and skill determine success.", 
+                    img: "../img/shinnotowermodal.jpg", 
+                    links: [{ label: "View Game", class: "btn-primary", href: "https://www.roblox.com/games/91474925380909/Shin-No-Tower-First-Floor" }, { label: "View Previews", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Shin-No-Tower" }] 
+                },
+                { 
+                    title: "World of Stands", 
+                    desc: "Roblox game inspired by JoJo's Bizarre Adventure. Features iconic Stand battles, dynamic combat mechanics, and interactive environments.", 
+                    img: "../img/worldofstandsmodal.jpg", 
+                    links: [{ label: "View Game", class: "btn-primary", href: "https://www.roblox.com/games/4723191631/World-of-Stands-Morioh" }, { label: "View Previews", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/World-of-Stands" }] 
+                },
+                { 
+                    title: "Weaponry", 
+                    desc: "A collection of 3D weapons created using Maya, Blender and Unity, optimized for performance and visual fidelity within Roblox Studio.", 
+                    img: "../img/weaponrymodal.jpg", 
+                    links: [{ label: "View Previews", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Weaponry" }] 
+                }
+            ],
+            web_iot: [
+                { 
+                    title: "Jomelle's Toys and Accessories E-Commerce System", 
+                    desc: "A web-based platform for online retail, allowing users to browse products, add items to their cart, and complete purchases.", 
+                    img: "../img/webdevbg.png", 
+                    links: [{ label: "View Previews", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Jomelle-s-Toys-and-Accessories-E-Commerce-System/blob/main/documentation/user-manual.md" }, { label: "View Source", class: "btn-primary", href: "https://github.com/JohnIvan-Ello/Jomelle-s-Toys-and-Accessories-E-Commerce-System" }] 
+                },
+                { 
+                    title: "Haribon Real Estate E-Commerce System", 
+                    desc: "A mobile-first platform designed for property sales and rentals.", 
+                    img: "../img/haribonestatemodal.jpg", 
+                    links: [{ label: "View Previews", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Haribon-Matrix-Hardware-E-Commerce/blob/main/documentation/user-manual.md" }, { label: "View Source", class: "btn-primary", href: "https://github.com/JohnIvan-Ello/Haribon-Real-Estate-E-Commerce-System" }] 
+                },
+                { 
+                    title: "Haribon Matrix Hardware E-Commerce", 
+                    desc: "A web-based platform for a hardware supplies store.", 
+                    img: "../img/haribonmatrixmodal.jpg", 
+                    links: [{ label: "View Previews", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Haribon-Real-Estate-E-Commerce-System/blob/main/documentation/user-manual.md" }, { label: "View Source", class: "btn-primary", href: "https://github.com/JohnIvan-Ello/Haribon-Matrix-Hardware-E-Commerce" }] 
+                },
+                { 
+                    title: "AquaNova (Published)", 
+                    desc: "An autonomous aquatic trash collector powered by solar and battery energy. It uses Arduino Nano control, Raspberry Pi with CNN and YOLOv8.", 
+                    img: "../img/aquanovamodal.png", 
+                    links: [{ label: "View Project Archive", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/AquaNova" }] 
+                },
+                { 
+                    title: "HydroSent", 
+                    desc: "An AI-powered trash detection and collection robot for water bodies. It integrates Arduino, GPS, compass, height sensors, and a conveyor belt.", 
+                    img: "../img/hydrosentmodal.jpg", 
+                    links: [{ label: "Project Archive", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/HydroSent" }] 
+                },
+                { 
+                    title: "Rescootert", 
+                    desc: "An amphibious search-and-rescue robot with Arduino and Auger Propulsion for flooded and unstable terrain.", 
+                    img: "../img/rescootertmodal.jpg", 
+                    links: [{ label: "Project Archive", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Rescootert" }] 
+                }
+            ],
+            qa: [
+                { 
+                    title: "Unleash App", 
+                    desc: "Quality assurance testing conducted for the Unleash App as part of the Unleash Game Development QA workflow using Jira. The process involved creating structured test scripts and test cases, identifying defects across QA and production environments for each release version, and documenting Proof of Testing (POT) to ensure feature stability and functionality.", 
+                    img: "../img/unleashmodal.png", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Software-Testing-Archives/tree/main/Unleash-App" }] 
+                },
+                { 
+                    title: "Ospital ng Makati System", 
+                    desc: "Comprehensive QA Lead testing performed for the Ospital ng Makati System, covering module-based validation, regression testing, and defect identification. Test data preparation and Proof of Testing (POT) documentation were used to verify system reliability, functionality, and performance across assigned modules.", 
+                    img: "../img/osmakmodal.png", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Software-Testing-Archives/tree/main/Ospital%20ng%20Makati%20System" }] 
+                },
+                { 
+                    title: "Shopee Mobile Application", 
+                    desc: "Extensive functional testing of the Shopee mobile shopping application through the development and execution of over 100 test cases. Core features tested include login and registration, product search and filtering, add to cart functionality, checkout and payment workflows, and order history validation.", 
+                    img: "../img/shopeemodal.png", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Software-Testing-Archives/tree/main/Shopee%20Mobile%20Application" }] 
+                },
+                { 
+                    title: "Makati Waste Management System", 
+                    desc: "Quality assurance testing focused on validating system modules, identifying defects, and performing regression tests to maintain system stability. Testing activities included structured test data preparation and Proof of Testing (POT) documentation to support verification of system functionality.", 
+                    img: "../img/mwmsmodal.png", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Software-Testing-Archives/tree/main/Makati%20Waste%20Management%20System" }] 
+                },
+                { 
+                    title: "PlantAI", 
+                    desc: "An AI-powered classification platform designed for automated botanical identification. The system processes uploaded images to accurately detect and categorize specific plant species, such as tobacco, leveraging computer vision to provide instant diagnostic feedback.", 
+                    img: "../img/plantaimodal.jpg", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Software-Testing-Archives/tree/main/PlantAI" }]
+                },
+                { 
+                    title: "AquaNova", 
+                    desc: "Test cases developed to validate the operational performance of AquaNova, an AI-powered aquatic trash collection robot. Testing covered navigation behavior, detection capabilities, and system responses across different operational scenarios to ensure reliable functionality.", 
+                    img: "../img/qanovamodal.png", 
+                    links: [{ label: "More Details", class: "btn-secondary", href: "https://github.com/JohnIvan-Ello/Software-Testing-Archives/tree/main/AquaNova" }] 
+                }
+            ]
         };
 
         function openProjectModal(category, element) {
@@ -232,27 +649,146 @@
             const container = document.getElementById('modal-projects-container');
             const modalWindow = document.getElementById('modal-content');
             const headerText = document.getElementById('modal-header-text');
+            
             modalWindow.className = 'modal-window';
+            
             if(element.classList.contains('window-red')) modalWindow.classList.add('window-red');
             if(element.classList.contains('window-blue')) modalWindow.classList.add('window-blue');
             if(element.classList.contains('window-yellow')) modalWindow.classList.add('window-yellow');
             if(element.classList.contains('window-green')) modalWindow.classList.add('window-green');
-            headerText.innerText = category.toUpperCase() + " PROJECTS";
+
+            // Format category name for the header
+            let formattedCategory = category.toUpperCase();
+            if(category === 'web_iot') formattedCategory = 'WEB & IOT';
+
+            headerText.innerText = formattedCategory + " PROJECTS";
             container.innerHTML = '';
-            projectData[category].forEach(proj => {
-                container.innerHTML += `<div class="internal-card"><img src="${proj.img}"><div class="internal-card-info"><h3>${proj.title}</h3><div class="internal-tags">${proj.tags.map(t => `<span>${t}</span>`).join('')}</div><p>${proj.desc}</p><button class="view-proj-btn">View Project →</button></div></div>`;
+            
+            projectData[category].forEach((proj, index) => {
+                const buttons = proj.links.map(link => 
+                    `<a href="${link.href}" target="_blank" class="view-proj-btn ${link.class}" style="text-decoration: none;">${link.label} →</a>`
+                ).join('');
+
+                const card = document.createElement('div');
+                card.className = 'internal-card';
+                card.style.animationDelay = `${(index * 0.1) + 0.2}s`;
+
+                const imageHTML = `<img src="${proj.img}" class="static-img">`;
+
+                card.innerHTML = `
+                        ${imageHTML}
+                        <div class="internal-card-info">
+                            <h3>${proj.title}</h3>
+                            <p>${proj.desc}</p>
+                            <div class="modal-btn-group">
+                                ${buttons}
+                            </div>
+                        </div>`;
+                container.appendChild(card);
             });
-            modal.classList.add('active');
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('active'), 10);
             document.body.style.overflow = 'hidden';
         }
 
         function closeProjectModal() {
-            document.getElementById('project-modal').classList.remove('active');
+            const modal = document.getElementById('project-modal');
+            modal.classList.remove('active');
+            setTimeout(() => modal.style.display = 'none', 400);
             document.body.style.overflow = 'auto';
         }
 
-        function handleOverlayClick(event) { closeProjectModal(); }
+        function handleOverlayClick(event) { if (event.target.id === 'project-modal') closeProjectModal(); }
         window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeProjectModal(); });
+
+        // --- VERSA CHATBOT LOGIC ---
+        const versaScript = [
+            { question: "How do I contact you?", answer: "You can reach John Ivan via email at 1ello.johnivan03@gmail.com for any Network Engineering inquiries. You can also click the LinkedIn or GitHub links in the footer!" },
+            { question: "What are your core networking skills?", answer: "I specialize in Enterprise Network Architecture, routing protocols (OSPF, EIGRP, BGP), switching technologies (VLANs, STP, EtherChannel), and network simulation using GNS3 and Cisco Packet Tracer." },
+            { question: "Tell me about your networking projects.", answer: "I've built and validated high-fidelity enterprise network simulations, including a Multi-Protocol Enterprise WAN Architecture and High-Availability Collapsed Core designs. You can find all 12 of my major ENES labs in the Network Engineer section of my portfolio!" },
+            { question: "Do you have experience with IPv6?", answer: "Absolutely! I've completed comprehensive labs migrating enterprise architectures to dual-stack configurations, setting up dynamic IPv6 routing protocols and floating static routes for zero-downtime failover." },
+            { question: "What is your experience with BGP?", answer: "I've designed multi-AS topologies in GNS3 to simulate how enterprise networks peer with external providers, validating the distinct behaviors of internal (iBGP) and external (eBGP) Border Gateway Protocol." },
+            { question: "What roles are you looking for?", answer: "I am actively looking for roles as a Network Engineer or Network Administrator, where I can leverage my expertise in routing, switching, and secure enterprise infrastructure." }
+        ];
+
+        // Pre-render options on load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderVersaOptions();
+        });
+
+        function toggleVersa() {
+            const window = document.getElementById('versaWindow');
+            window.classList.toggle('active');
+        }
+
+        function renderVersaOptions() {
+            const optionsContainer = document.getElementById('versaOptions');
+            optionsContainer.innerHTML = ''; 
+            versaScript.forEach(scriptObj => {
+                const btn = document.createElement('button');
+                btn.className = 'versa-opt-btn';
+                btn.innerText = scriptObj.question;
+                btn.onclick = () => handleVersaClick(scriptObj.question, scriptObj.answer);
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function handleVersaClick(question, answer) {
+            postMessageToChat(question, 'user');
+            
+            // Hide options temporarily to simulate thinking
+            const container = document.getElementById('versaOptionsContainer');
+            container.style.display = 'none';
+
+            setTimeout(() => {
+                postMessageToChat(answer, 'bot');
+                setTimeout(() => {
+                    container.style.display = 'block';
+                    scrollToBottom();
+                }, 500);
+            }, 600);
+        }
+
+        function handleVersaKeyPress(event) {
+            if (event.key === "Enter") {
+                handleVersaCustomInput();
+            }
+        }
+
+        function handleVersaCustomInput() {
+            const inputField = document.getElementById('versaInput');
+            const text = inputField.value.trim();
+            if(!text) return;
+            
+            inputField.value = '';
+            postMessageToChat(text, 'user');
+            
+            const container = document.getElementById('versaOptionsContainer');
+            container.style.display = 'none';
+
+            setTimeout(() => {
+                postMessageToChat("I'm a simple automated assistant, but you can find most answers using the quick replies below or by exploring the portfolio!", 'bot');
+                setTimeout(() => {
+                    container.style.display = 'block';
+                    scrollToBottom();
+                }, 500);
+            }, 800);
+        }
+
+        function postMessageToChat(text, sender) {
+            const body = document.getElementById('versaBody');
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `versa-msg ${sender}-msg`;
+            msgDiv.innerHTML = text;
+            body.appendChild(msgDiv);
+            scrollToBottom();
+        }
+
+        function scrollToBottom() {
+            const body = document.getElementById('versaBody');
+            body.scrollTop = body.scrollHeight;
+        }
+
     </script>
 </body>
 </html>
